@@ -28,7 +28,8 @@ class WPSubtitle_Admin {
 		add_filter( '_wp_post_revision_fields', array( 'WPSubtitle_Admin', '_wp_post_revision_fields' ), 9 );
 		add_action( 'wp_restore_post_revision', array( 'WPSubtitle_Admin', 'wp_restore_post_revision' ), 10, 2 );
 
-		add_filter( 'sanitize_post_meta_wps_subtitle', array( 'WPSubtitle_Admin', 'sanitize_subtitle_value' ) );
+		// _vp_ 2022-05-30 I want full html here.
+		// add_filter( 'sanitize_post_meta_wps_subtitle', array( 'WPSubtitle_Admin', 'sanitize_subtitle_value' ) );
 
 	}
 
